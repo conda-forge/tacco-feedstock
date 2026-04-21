@@ -1,5 +1,5 @@
 {% set name = "tacco" %}
-{% set version = "0.4.0.post1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tacco-{{ version }}.tar.gz
-  sha256: b64a3a056bc36102c189de5108ccb55f33f35e292250da106dcb2d5817e4495d
+  sha256: e192509c9182b36e1ca9d0e7baa00df90abdff3b6eba896ea3135f8cb8154eee
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
